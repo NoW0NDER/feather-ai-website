@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feather AI — Intelligence, Evolved</title>
+  <meta name="description" content="Feather AI Technology Limited — Building the next generation of AI agents for enterprises and individuals." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Cursor Glow -->
+  <div id="cursor-glow"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 2L36 10V26L20 38L4 26V10L20 2Z" stroke="url(#logoGrad)" stroke-width="1.5" fill="none"/>
+          <path d="M20 8L29 13V23L20 30L11 23V13L20 8Z" fill="url(#logoGrad)" opacity="0.3"/>
+          <path d="M20 14L24 16.5V21.5L20 24L16 21.5V16.5L20 14Z" fill="url(#logoGrad)"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="4" y1="2" x2="36" y2="38">
+              <stop stop-color="#00f0ff"/>
+              <stop offset="1" stop-color="#7b2ff7"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">Feather AI</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#products" data-i18n="nav.products">Products</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-btn" id="langBtn">
+            <span class="lang-flag">🌐</span>
+            <span class="lang-label">EN</span>
+            <svg class="lang-arrow" viewBox="0 0 12 12" fill="none"><path d="M3 5L6 8L9 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <button data-lang="en">🇺🇸 English</button>
+            <button data-lang="zh-TW">🇹🇼 繁體中文</button>
+            <button data-lang="zh-CN">🇨🇳 简体中文</button>
+            <button data-lang="ja">🇯🇵 日本語</button>
+            <button data-lang="fr">🇫🇷 Français</button>
+            <button data-lang="de">🇩🇪 Deutsch</button>
+          </div>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#services" data-i18n="nav.services">Services</a>
+    <a href="#products" data-i18n="nav.products">Products</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge" data-i18n="hero.badge">Next-Gen AI Solutions</div>
+      <h1>
+        <span class="hero-line" data-i18n="hero.title1">Intelligence,</span>
+        <span class="hero-line gradient-text" data-i18n="hero.title2">Evolved.</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero.subtitle">We build AI agents that think, adapt, and create — transforming how enterprises operate and how individuals live.</p>
+      <div class="hero-cta">
+        <a href="#services" class="btn btn-primary" data-i18n="hero.cta1">Explore Services</a>
+        <a href="#products" class="btn btn-ghost" data-i18n="hero.cta2">Meet Our Products</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="about.tag">Who We Are</span>
+        <h2 data-i18n="about.title">The AI Company That<br/><span class="gradient-text">Thinks Different</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card" data-reveal>
+          <div class="about-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="url(#g1)" stroke-width="1.5"/><path d="M24 12V24L32 28" stroke="url(#g1)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="g1" x1="4" y1="4" x2="44" y2="44"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#7b2ff7"/></linearGradient></defs></svg>
+          </div>
+          <h3 data-i18n="about.card1.title">Founded for the Future</h3>
+          <p data-i18n="about.card1.desc">Feather AI Technology Limited was born from a singular vision: AI should not just automate — it should evolve. We are building the next generation of intelligent agents that learn, adapt, and create alongside humans.</p>
+        </div>
+        <div class="about-card" data-reveal>
+          <div class="about-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 24C8 15.2 15.2 8 24 8" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/><path d="M24 8C32.8 8 40 15.2 40 24" stroke="#7b2ff7" stroke-width="2" stroke-linecap="round"/><path d="M40 24C40 32.8 32.8 40 24 40" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/><path d="M24 40C15.2 40 8 32.8 8 24" stroke="#7b2ff7" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="24" r="4" fill="url(#g2)"/><defs><linearGradient id="g2" x1="8" y1="8" x2="40" y2="40"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#7b2ff7"/></linearGradient></defs></svg>
+          </div>
+          <h3 data-i18n="about.card2.title">Dual-Track Innovation</h3>
+          <p data-i18n="about.card2.desc">We operate on two fronts: empowering enterprises with intelligent automation and consulting, while creating consumer AI products that feel magical. From boardroom to living room, our AI adapts.</p>
+        </div>
+        <div class="about-card" data-reveal>
+          <div class="about-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M12 36L24 12L36 36" stroke="url(#g3)" stroke-width="1.5"/><path d="M17 28H31" stroke="url(#g3)" stroke-width="1.5"/><circle cx="24" cy="12" r="3" fill="#00f0ff"/><circle cx="12" cy="36" r="3" fill="#7b2ff7"/><circle cx="36" cy="36" r="3" fill="#00f0ff"/><defs><linearGradient id="g3" x1="12" y1="12" x2="36" y2="36"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#7b2ff7"/></linearGradient></defs></svg>
+          </div>
+          <h3 data-i18n="about.card3.title">Global Vision</h3>
+          <p data-i18n="about.card3.desc">Headquartered with a global mindset, we serve clients across continents. Our multilingual AI products and cross-cultural consulting approach make intelligence truly borderless.</p>
+        </div>
+      </div>
+      <div class="about-stats" data-reveal>
+        <div class="stat">
+          <span class="stat-num" data-count="50">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label" data-i18n="about.stat1">Enterprise Clients</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="99.9">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label" data-i18n="about.stat2">Uptime SLA</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="10">0</span><span class="stat-suffix">x</span>
+          <span class="stat-label" data-i18n="about.stat3">Efficiency Boost</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="6">0</span><span class="stat-suffix"></span>
+          <span class="stat-label" data-i18n="about.stat4">Languages Supported</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services (To B) Section -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="services.tag">For Enterprise</span>
+        <h2 data-i18n="services.title">AI That Works<br/><span class="gradient-text">For Your Business</span></h2>
+        <p class="section-desc" data-i18n="services.subtitle">From intelligent automation to strategic consulting, we help enterprises harness the full power of AI.</p>
+      </div>
+      <div class="services-grid">
+        <!-- Service 1: Enterprise Agent -->
+        <div class="service-card" data-reveal>
+          <div class="service-visual">
+            <div class="service-illustration agent-illust">
+              <div class="agent-grid">
+                <div class="agent-node" style="--delay:0s"></div>
+                <div class="agent-node" style="--delay:0.2s"></div>
+                <div class="agent-node" style="--delay:0.4s"></div>
+                <div class="agent-node" style="--delay:0.6s"></div>
+                <div class="agent-node" style="--delay:0.8s"></div>
+                <div class="agent-connection"></div>
+              </div>
+              <div class="agent-pulse"></div>
+            </div>
+          </div>
+          <div class="service-content">
+            <div class="service-badge" data-i18n="services.s1.badge">Enterprise Agent</div>
+            <h3 data-i18n="services.s1.title">Enterprise Efficiency Agent</h3>
+            <p data-i18n="services.s1.desc">Deploy intelligent agents across your back-office operations — from finance and HR to supply chain and compliance. Our agents learn your workflows, automate repetitive tasks, and surface insights that humans miss.</p>
+            <ul class="service-features">
+              <li data-i18n="services.s1.f1">Workflow Automation & Orchestration</li>
+              <li data-i18n="services.s1.f2">Intelligent Document Processing</li>
+              <li data-i18n="services.s1.f3">Multi-System Integration (ERP, CRM, HRIS)</li>
+              <li data-i18n="services.s1.f4">Real-time Analytics & Anomaly Detection</li>
+            </ul>
+            <a href="#contact" class="service-link" data-i18n="services.cta">Request Demo →</a>
+          </div>
+        </div>
+
+        <!-- Service 2: AI Consulting -->
+        <div class="service-card reverse" data-reveal>
+          <div class="service-visual">
+            <div class="service-illustration consulting-illust">
+              <div class="consulting-brain">
+                <div class="brain-ring r1"></div>
+                <div class="brain-ring r2"></div>
+                <div class="brain-ring r3"></div>
+                <div class="brain-core"></div>
+              </div>
+            </div>
+          </div>
+          <div class="service-content">
+            <div class="service-badge" data-i18n="services.s2.badge">Consulting</div>
+            <h3 data-i18n="services.s2.title">AI Technology Consulting</h3>
+            <p data-i18n="services.s2.desc">Navigate the AI landscape with confidence. Our consultants bring deep technical expertise and industry insight to help you design, validate, and execute your AI strategy — from proof-of-concept to production.</p>
+            <ul class="service-features">
+              <li data-i18n="services.s2.f1">AI Readiness Assessment & Roadmap</li>
+              <li data-i18n="services.s2.f2">Model Selection & Architecture Design</li>
+              <li data-i18n="services.s2.f3">MLOps & Infrastructure Setup</li>
+              <li data-i18n="services.s2.f4">AI Governance, Compliance & Ethics</li>
+            </ul>
+            <a href="#contact" class="service-link" data-i18n="services.cta">Request Demo →</a>
+          </div>
+        </div>
+
+        <!-- Service 3: Vibe Coding -->
+        <div class="service-card" data-reveal>
+          <div class="service-visual">
+            <div class="service-illustration coding-illust">
+              <div class="code-editor">
+                <div class="code-header">
+                  <span class="code-dot d1"></span>
+                  <span class="code-dot d2"></span>
+                  <span class="code-dot d3"></span>
+                </div>
+                <div class="code-body">
+                  <span class="code-line" style="--w:60%"><span class="code-kw">const</span> <span class="code-var">agent</span> = <span class="code-fn">create</span>();</span>
+                  <span class="code-line" style="--w:75%"><span class="code-kw">await</span> agent.<span class="code-fn">evolve</span>();</span>
+                  <span class="code-line" style="--w:50%"><span class="code-kw">return</span> agent.<span class="code-fn">deploy</span>();</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-content">
+            <div class="service-badge" data-i18n="services.s3.badge">Development</div>
+            <h3 data-i18n="services.s3.title">Proxy Vibe Coding</h3>
+            <p data-i18n="services.s3.desc">Your vision, AI-powered execution. Our Vibe Coding service combines elite engineering talent with AI-augmented workflows to deliver software at unprecedented speed — without sacrificing quality.</p>
+            <ul class="service-features">
+              <li data-i18n="services.s3.f1">AI-Augmented Rapid Prototyping</li>
+              <li data-i18n="services.s3.f2">Full-Stack Development & Delivery</li>
+              <li data-i18n="services.s3.f3">Automated Code Review & Testing</li>
+              <li data-i18n="services.s3.f4">Continuous Deployment & Monitoring</li>
+            </ul>
+            <a href="#contact" class="service-link" data-i18n="services.cta">Request Demo →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products (To C) Section -->
+  <section id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="products.tag">For Everyone</span>
+        <h2 data-i18n="products.title">AI That Lives<br/><span class="gradient-text">With You</span></h2>
+        <p class="section-desc" data-i18n="products.subtitle">Consumer products that feel less like tools and more like companions — intelligent, adaptive, and deeply personal.</p>
+      </div>
+      <div class="products-grid">
+        <!-- Product 1: Feather Assistant -->
+        <div class="product-card feather-assistant" data-reveal>
+          <div class="product-glow"></div>
+          <div class="product-visual">
+            <div class="fa-orb">
+              <div class="fa-ring r1"></div>
+              <div class="fa-ring r2"></div>
+              <div class="fa-ring r3"></div>
+              <div class="fa-core">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M12 2L2 7L12 12L22 7L12 2Z"/><path d="M2 17L12 22L22 17"/><path d="M2 12L12 17L22 12"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-badge" data-i18n="products.p1.badge">Personal AI Agent</div>
+            <h3 data-i18n="products.p1.title">Feather Assistant</h3>
+            <p class="product-tagline" data-i18n="products.p1.tagline">The Self-Evolving AI That Grows With You</p>
+            <p class="product-desc" data-i18n="products.p1.desc">Feather Assistant isn't just another chatbot — it's a living AI companion that learns your habits, anticipates your needs, and evolves its capabilities over time. The more you use it, the smarter it gets.</p>
+            <div class="product-features">
+              <div class="pf-item">
+                <span class="pf-icon">🧠</span>
+                <div>
+                  <strong data-i18n="products.p1.f1t">Self-Learning Engine</strong>
+                  <span data-i18n="products.p1.f1d">Continuously adapts to your preferences and workflows</span>
+                </div>
+              </div>
+              <div class="pf-item">
+                <span class="pf-icon">🔒</span>
+                <div>
+                  <strong data-i18n="products.p1.f2t">Privacy-First Architecture</strong>
+                  <span data-i18n="products.p1.f2d">Your data stays yours — on-device processing by default</span>
+                </div>
+              </div>
+              <div class="pf-item">
+                <span class="pf-icon">🌐</span>
+                <div>
+                  <strong data-i18n="products.p1.f3t">Cross-Platform</strong>
+                  <span data-i18n="products.p1.f3d">Seamless experience across all your devices</span>
+                </div>
+              </div>
+              <div class="pf-item">
+                <span class="pf-icon">✨</span>
+                <div>
+                  <strong data-i18n="products.p1.f4t">Multi-Modal Interaction</strong>
+                  <span data-i18n="products.p1.f4d">Voice, text, vision — interact naturally your way</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-cta">
+              <a href="#contact" class="btn btn-primary" data-i18n="products.p1.cta">Join Waitlist</a>
+              <span class="product-soon" data-i18n="products.coming">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Pet F -->
+        <div class="product-card pet-f" data-reveal>
+          <div class="product-glow pet-glow"></div>
+          <div class="product-visual">
+            <div class="pet-avatar">
+              <div class="pet-body">
+                <div class="pet-face">
+                  <div class="pet-eye left"><div class="pet-pupil"></div></div>
+                  <div class="pet-eye right"><div class="pet-pupil"></div></div>
+                  <div class="pet-mouth"></div>
+                </div>
+                <div class="pet-ear left"></div>
+                <div class="pet-ear right"></div>
+              </div>
+              <div class="pet-aura"></div>
+              <div class="pet-sparkle s1">✦</div>
+              <div class="pet-sparkle s2">✧</div>
+              <div class="pet-sparkle s3">✦</div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="product-badge pet-badge" data-i18n="products.p2.badge">Digital Companion</div>
+            <h3 data-i18n="products.p2.title">Pet F</h3>
+            <p class="product-tagline" data-i18n="products.p2.tagline">A Friend From Another Dimension</p>
+            <p class="product-desc" data-i18n="products.p2.desc">Pet F is not your ordinary digital pet. Born from a rift between dimensions, each Pet F develops a unique personality shaped by your interactions. It feels, it learns, it surprises — and it might just teach you something about yourself.</p>
+            <div class="product-features">
+              <div class="pf-item">
+                <span class="pf-icon">💫</span>
+                <div>
+                  <strong data-i18n="products.p2.f1t">Emotional AI</strong>
+                  <span data-i18n="products.p2.f1d">Responds to your mood with genuine emotional depth</span>
+                </div>
+              </div>
+              <div class="pf-item">
+                <span class="pf-icon">🎭</span>
+                <div>
+                  <strong data-i18n="products.p2.f2t">Unique Personality</strong>
+                  <span data-i18n="products.p2.f2d">No two Pet Fs are alike — yours evolves uniquely</span>
+                </div>
+              </div>
+              <div class="pf-item">
+                <span class="pf-icon">📱</span>
+                <div>
+                  <strong data-i18n="products.p2.f3t">AR Integration</strong>
+                  <span data-i18n="products.p2.f3d">Bring your Pet F into the real world with AR</span>
+                </div>
+              </div>
+              <div class="pf-item">
+                <span class="pf-icon">🌍</span>
+                <div>
+                  <strong data-i18n="products.p2.f4t">Community & Social</strong>
+                  <span data-i18n="products.p2.f4d">Connect, play, and explore with other Pet F owners</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-cta">
+              <a href="#contact" class="btn btn-primary btn-pet" data-i18n="products.p2.cta">Join Waitlist</a>
+              <span class="product-soon" data-i18n="products.coming">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrapper" data-reveal>
+        <div class="contact-bg"></div>
+        <div class="contact-content">
+          <h2 data-i18n="contact.title">Ready to Evolve<br/><span class="gradient-text">Your Intelligence?</span></h2>
+          <p data-i18n="contact.desc">Whether you're an enterprise seeking AI transformation or an individual ready for a smarter companion — we'd love to hear from you.</p>
+          <div class="contact-actions">
+            <a href="mailto:hello@featherai.tech" class="btn btn-primary btn-lg" data-i18n="contact.cta1">Get In Touch</a>
+            <a href="#services" class="btn btn-ghost btn-lg" data-i18n="contact.cta2">View Services</a>
+          </div>
+          <div class="contact-email">hello@featherai.tech</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 2L36 10V26L20 38L4 26V10L20 2Z" stroke="url(#logoGrad2)" stroke-width="1.5" fill="none"/>
+              <path d="M20 8L29 13V23L20 30L11 23V13L20 8Z" fill="url(#logoGrad2)" opacity="0.3"/>
+              <path d="M20 14L24 16.5V21.5L20 24L16 21.5V16.5L20 14Z" fill="url(#logoGrad2)"/>
+              <defs><linearGradient id="logoGrad2" x1="4" y1="2" x2="36" y2="38"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#7b2ff7"/></linearGradient></defs>
+            </svg>
+            <span class="logo-text">Feather AI</span>
+          </a>
+          <p data-i18n="footer.desc">Building the next generation of AI agents for enterprises and individuals.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4 data-i18n="footer.col1.title">Services</h4>
+            <a href="#services" data-i18n="services.s1.title">Enterprise Agent</a>
+            <a href="#services" data-i18n="services.s2.title">AI Consulting</a>
+            <a href="#services" data-i18n="services.s3.title">Vibe Coding</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.col2.title">Products</h4>
+            <a href="#products" data-i18n="products.p1.title">Feather Assistant</a>
+            <a href="#products" data-i18n="products.p2.title">Pet F</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.col3.title">Company</h4>
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Feather AI Technology Limited. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
