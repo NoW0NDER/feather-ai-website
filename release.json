@@ -1,5 +1,21 @@
 {
-  "status": "preparing",
-  "web_url": null,
-  "macos": null
+  "status": "limited-preview",
+  "web_url": "https://chat.athena.featherhk.com/",
+  "app_url": "https://app.athena.featherhk.com/",
+  "macos": {
+    "version": "0.1.0",
+    "architecture": "arm64",
+    "minimum_macos": "13.0",
+    "sha256": "044b4347f5f0e17a926827858e28096fa1d721bb69a9ff0bc4537e72536edde1",
+    "filename": "Athena-0.1.0-macos-arm64-preview.dmg",
+    "bytes": 52725494,
+    "signed": false,
+    "notarized": false,
+    "channel": "preview",
+    "cloud_url": "https://chat.athena.featherhk.com/v1",
+    "git_revision": "fb82686aa2b3ae6064978d20915429d6a4a23649",
+    "git_dirty": false,
+    "url": "https://app.athena.featherhk.com/downloads/fb82686/Athena-0.1.0-macos-arm64-preview.dmg",
+    "checksum_url": "https://app.athena.featherhk.com/downloads/fb82686/Athena-0.1.0-macos-arm64-preview.sha256"
+  }
 }

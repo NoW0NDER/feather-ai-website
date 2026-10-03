@@ -124,3 +124,4 @@ footer>span{margin-left:auto;font-size:11px}
 }
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}
 }
+@media(max-width:620px){.masthead{padding-top:16px;padding-bottom:14px}.masthead nav{display:flex;order:3;flex-basis:100%;justify-content:space-between;padding-top:12px;font-size:12px;gap:12px}.masthead .language{order:2}}

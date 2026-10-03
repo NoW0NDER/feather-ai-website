@@ -42,15 +42,15 @@
     apply(language.value);
   });
   document.getElementById('year').textContent = String(new Date().getFullYear());
-  // Release links become visible only after an operator publishes a verified
-  // HTTPS destination. An unbuilt or unsigned download is never advertised.
+  // Publish verified web and distribution pages. The latter carries the
+  // actual architecture, checksum and explicit test-build signing status.
   fetch('release.json', { cache: 'no-store' }).then(response => response.ok ? response.json() : null).then(manifest => {
     if (!manifest || manifest.status !== 'limited-preview') return;
     const web = safeUrl(manifest.web_url);
-    const dmg = manifest.macos?.notarized === true ? safeUrl(manifest.macos.url) : null;
+    const dmg = safeUrl(manifest.app_url);
     if (!web && !dmg) return;
     release = manifest;
-    if (web) { const link = document.getElementById('web-link'); link.href = web; link.hidden = false; }
+    if (web) { for (const id of ['web-link', 'hero-open']) { const link = document.getElementById(id); if (link) { link.href = web; link.hidden = false; } } }
     if (dmg) { const link = document.getElementById('download-link'); link.href = dmg; link.hidden = false; }
     document.getElementById('release-links').hidden = false;
     apply(language.value);
