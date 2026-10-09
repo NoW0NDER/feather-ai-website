@@ -18,7 +18,8 @@
     <nav aria-label="Main navigation" data-label="nav">
       <a href="/athena/" data-i18n="product">Athena</a>
       <a href="/about/" data-i18n="approach">Our approach</a>
-      <a href="https://app.athena.featherhk.com" data-i18n="availability">Availability</a>
+      <a href="/open-source/" data-i18n="openSource">Open source</a>
+      <a href="https://app.athena.featherhk.com" data-i18n="availability">Download for Mac</a>
     </nav>
     <label class="language"><span class="sr-only" data-i18n="language">Language</span><select id="language" aria-label="Language"><option value="en">English</option><option value="ja">日本語</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option></select></label>
   </header>
@@ -29,7 +30,7 @@
         <h1 id="hero-title">Athena<span>.</span></h1>
         <p class="hero-title" data-i18n="headline">Make room<br>for what matters.</p>
         <p class="intro" data-i18n="intro">A personal AI assistant. Begin with what’s on your mind; find a little more space for everything else.</p>
-        <a id="hero-open" class="solid-link" hidden><span data-i18n="open">Open Athena</span><span aria-hidden="true">↗</span></a><a class="text-link" href="/athena/"><span data-i18n="meet">Meet Athena</span><span aria-hidden="true">↗</span></a>
+        <a id="hero-download" class="solid-link" href="https://app.athena.featherhk.com/"><span data-i18n="download">Download for macOS</span><svg class="line-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v12m-5-5 5 5 5-5M4 18h12"/></svg></a><a class="text-link" href="/athena/"><span data-i18n="meet">Meet Athena</span><svg class="line-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10"/></svg></a>
       </div>
       <figure class="hero-art" aria-hidden="true">
         <svg class="athena-seal" viewBox="0 0 500 590" fill="none">
@@ -58,9 +59,9 @@
         <div class="preview-top"><span>ATHENA</span><span aria-hidden="true">···</span></div>
         <div class="preview-greeting" data-i18n="greeting">Hello, I’m Athena.<br>What’s on your mind?</div>
         <p class="preview-user" data-i18n="exampleUser">Help me make sense of these notes.</p>
-        <div class="preview-reply"><span class="small-owl" aria-hidden="true">✧</span><p data-i18n="exampleReply">Let’s find the important parts, then put them into a clear plan.</p></div>
-        <div class="preview-file"><span aria-hidden="true">↳</span><span data-i18n="exampleFile">Notes → a plan</span><span class="file-rule" aria-hidden="true"></span><span>MD</span></div>
-        <div class="preview-composer"><span data-i18n="message">Send a message…</span><span aria-hidden="true">↑</span></div>
+        <div class="preview-reply"><img class="small-owl" src="/assets/favicon.svg" alt=""><p data-i18n="exampleReply">Let’s find the important parts, then put them into a clear plan.</p></div>
+        <div class="preview-file"><svg class="line-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 2h7l4 4v12H5ZM12 2v5h4M8 11h5M8 14h5"/></svg><span data-i18n="exampleFile">Notes → a plan</span><span class="file-rule" aria-hidden="true"></span><span>MD</span></div>
+        <div class="preview-composer"><span data-i18n="message">Send a message…</span><svg class="line-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 17V3m-5 5 5-5 5 5"/></svg></div>
         <span class="illustration-label" data-i18n="illustration">Illustrative conversation</span>
       </div>
     </section>
@@ -76,10 +77,11 @@
 
     <section class="release-section" id="release" aria-labelledby="release-title">
       <div><span class="eyebrow" data-i18n="releaseEyebrow">An invitation to begin</span><h2 id="release-title" data-i18n="releaseTitle">A new kind of<br>everyday companion.</h2></div>
-      <div class="release-detail"><p id="release-status" data-i18n="releaseBody">We’re preparing Athena for its first release. Access is currently limited to invited accounts.</p><div id="release-links" hidden><a id="web-link" class="solid-link" hidden><span data-i18n="open">Open Athena</span><span aria-hidden="true">↗</span></a><a id="download-link" class="text-link" hidden><span data-i18n="download">Download for macOS</span><span aria-hidden="true">↓</span></a></div><p class="release-footnote" data-i18n="releaseFootnote">macOS & web first. More ways to be with you, in time.</p></div>
+      <div class="release-detail"><p id="release-status" data-i18n="releaseBody">The Mac preview is available for enabled accounts with credit. The source release and local setup are in preparation.</p><div id="release-links"><a id="download-link" class="solid-link" href="https://app.athena.featherhk.com/"><span data-i18n="download">Download for macOS</span><svg class="line-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v12m-5-5 5 5 5-5M4 18h12"/></svg></a><a class="text-link" href="/open-source/"><span data-i18n="openSource">Open source</span></a></div><p class="release-footnote" data-i18n="releaseFootnote">Mac preview available. Open-source local mode is in preparation.</p></div>
     </section>
+    <div class="site-reference"><p class="web-reference"><span data-i18n="webLabel">Web version</span> <a href="https://chat.athena.featherhk.com/">chat.athena.featherhk.com</a></p></div>
   </main>
-  <footer><a class="feather" href="/">feather<span aria-hidden="true"> /</span></a><p data-i18n="footer">Intelligence for the life you want to live.</p><span>© <span id="year">2026</span> Feather</span></footer>
-  <noscript><p class="noscript">This page works without JavaScript. Language selection and release links require JavaScript.</p></noscript>
+  <footer><a class="feather" href="/">feather<span aria-hidden="true"> /</span></a><p data-i18n="footer">Intelligence for the life you want to live.</p><span>&copy; <span id="year">2026</span> Feather</span></footer>
+  <noscript><p class="noscript">This page works without JavaScript. Language selection requires JavaScript.</p></noscript>
 </body>
 </html>

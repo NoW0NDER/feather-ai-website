@@ -42,17 +42,16 @@
     apply(language.value);
   });
   document.getElementById('year').textContent = String(new Date().getFullYear());
-  // Publish verified web and distribution pages. The latter carries the
-  // actual architecture, checksum and explicit test-build signing status.
+  // Keep the distribution page reachable even when its manifest is unavailable.
+  // The download page owns artifact validation, requirements and signing status.
   fetch('release.json', { cache: 'no-store' }).then(response => response.ok ? response.json() : null).then(manifest => {
     if (!manifest || manifest.status !== 'limited-preview') return;
-    const web = safeUrl(manifest.web_url);
-    const dmg = safeUrl(manifest.app_url);
-    if (!web && !dmg) return;
+    const app = safeUrl(manifest.app_url);
+    if (!app) return;
     release = manifest;
-    if (web) { for (const id of ['web-link', 'hero-open']) { const link = document.getElementById(id); if (link) { link.href = web; link.hidden = false; } } }
-    if (dmg) { const link = document.getElementById('download-link'); link.href = dmg; link.hidden = false; }
-    document.getElementById('release-links').hidden = false;
+    for (const id of ['hero-download', 'download-link']) {
+      document.getElementById(id).href = app;
+    }
     apply(language.value);
-  }).catch(() => { /* An unavailable manifest must not create a broken CTA. */ });
+  }).catch(() => { /* Static distribution links remain available. */ });
 })();

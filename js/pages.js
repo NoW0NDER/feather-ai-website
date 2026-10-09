@@ -7,6 +7,7 @@
     document.documentElement.lang = locale; document.title = c[document.body.dataset.page + 'Title'];
     document.querySelector('meta[name="description"]').content = c[document.body.dataset.page + 'Intro'];
     select.value = locale; select.setAttribute('aria-label', c.language);
+    document.querySelectorAll('[data-label]').forEach(node => node.setAttribute('aria-label', c[node.dataset.label]));
     document.querySelectorAll('[data-i18n]').forEach(node => {
       const text = c[node.dataset.i18n] || catalogs.en[node.dataset.i18n];
       if (text) node.replaceChildren(...text.split('\n').flatMap((s, i) => i ? [document.createElement('br'), document.createTextNode(s)] : [document.createTextNode(s)]));
