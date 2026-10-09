@@ -54,7 +54,8 @@ for (const group of groups) {
     }
     for (const [, attribute, value] of html.matchAll(/\b(href|src)="([^"]+)"/g)) {
       if (/^https:\/\//.test(value)) {
-        assert(['featherhk.com', 'chat.athena.featherhk.com', 'app.athena.featherhk.com'].includes(new URL(value).hostname), `${file}: unexpected external ${attribute}`);
+        assert(['featherhk.com', 'chat.athena.featherhk.com', 'app.athena.featherhk.com'].includes(new URL(value).hostname)
+          || (attribute === 'href' && value === 'https://support.apple.com/102445'), `${file}: unexpected external ${attribute}`);
         continue;
       }
       if (value.startsWith('#')) {
@@ -70,6 +71,11 @@ for (const group of groups) {
   }
 }
 const main = read('js/main.js');
+for (const file of ['index.html', 'app/index.html']) {
+  const html = read(file), aboveFold = html.slice(0, html.indexOf('</section>'));
+  assert(aboveFold.includes('data-i18n="platform"') && aboveFold.includes('https://support.apple.com/102445'), `${file}: first-screen requirements and Apple guide`);
+  assert(aboveFold.includes('Developer ID') && aboveFold.includes('notarization'), `${file}: explicit signing status`);
+}
 assert(!/web-link|hero-open/.test(main), 'manifest callback must not restore web CTA');
 assert(main.includes("['hero-download', 'download-link']"), 'manifest callback updates both Mac links');
 const openSource = read('open-source/index.html');

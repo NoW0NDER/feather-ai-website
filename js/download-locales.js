@@ -3,11 +3,11 @@ window.athenaDownloadLocales = {
     "title": "Athena for macOS — Feather",
     "skip": "Skip to content",
     "language": "Language",
-    "headline": "A little more room.\nRight on your Mac.",
-    "intro": "Your words, your files, your own space to get things done.",
+    "headline": "Your work,\ncloser at hand.",
+    "intro": "A personal assistant for your Mac. Keep a task’s conversation and files together, and return to continue.",
     "download": "Download the macOS preview",
     "preparing": "The next build is being prepared.",
-    "notice": "An early hosted preview for enabled accounts. It is not Apple-notarized; macOS may block it on first launch.",
+    "notice": "For enabled accounts with credit. Ad-hoc test signature only; no Developer ID signature or Apple notarization. macOS may block the first launch.",
     "drag": "Drag into Applications. Make yourself at home.",
     "begin": "A simple beginning",
     "start": "From download\nto your first conversation.",
@@ -22,17 +22,18 @@ window.athenaDownloadLocales = {
     "footer": "Intelligence for the life you want to live.",
     "openSource": "Open source",
     "webLabel": "Web version",
-    "sourceNotice": "Looking for local setup with your own key? Read our open-source release plans."
+    "sourceNotice": "Looking for local setup with your own key? Read our open-source release plans.",
+    "firstLaunch": "First launch: Apple’s guide"
   },
   "ja": {
     "title": "Athena for macOS — Feather",
     "skip": "本文へ移動",
     "language": "言語",
-    "headline": "毎日に、少しの余白を。\nあなたの Mac に。",
-    "intro": "いつもの言葉と、手元のファイルから。やりたいことを進める、あなたの場所。",
+    "headline": "作業の続きは、\nすぐそばに。",
+    "intro": "Mac のためのパーソナルアシスタント。作業の会話とファイルをまとめて残し、戻って続きを。",
     "download": "macOS テスト版をダウンロード",
     "preparing": "次のビルドを準備しています。",
-    "notice": "有効なアカウント向けの初期ホスト型プレビューです。Apple の公証は未取得のため、初回起動時に macOS がブロックする場合があります。",
+    "notice": "有効なアカウントと残高が必要です。アドホック署名のテスト版で、Developer ID 署名と Apple の公証は未取得です。初回起動がブロックされる場合があります。",
     "drag": "Applications にドラッグして、はじめましょう。",
     "begin": "かんたんに、はじめる",
     "start": "ダウンロードから、\n最初の会話まで。",
@@ -47,17 +48,18 @@ window.athenaDownloadLocales = {
     "footer": "あなたらしい暮らしに、知性を。",
     "openSource": "オープンソース",
     "webLabel": "ウェブ版",
-    "sourceNotice": "自分のキーでローカルに使いたい方へ。オープンソース公開計画をご覧ください。"
+    "sourceNotice": "自分のキーでローカルに使いたい方へ。オープンソース公開計画をご覧ください。",
+    "firstLaunch": "初回起動について：Apple のガイド"
   },
   "zh-Hans": {
     "title": "Athena macOS 测试版 — Feather",
     "skip": "跳到正文",
     "language": "语言",
-    "headline": "给日常，留一点余白。\n从你的 Mac 开始。",
-    "intro": "用自然的语言，处理手边的文件。在自己的空间里，把事情慢慢做好。",
+    "headline": "工作，\n在桌面上继续。",
+    "intro": "你的 Mac 个人助手。把一件事的对话与文件留在一起，回来时接着做。",
     "download": "下载 macOS 测试版",
     "preparing": "正在准备下一个版本。",
-    "notice": "面向已开通账户的早期托管预览版。尚未通过 Apple 公证，首次打开可能被 macOS 拦截。",
+    "notice": "需要已开通且有额度的账户。此测试版仅临时签名，尚无 Developer ID 签名或 Apple 公证，首次打开可能被 macOS 拦截。",
     "drag": "拖入「应用程序」，从这里开始。",
     "begin": "简单地开始",
     "start": "从下载，\n到第一句对话。",
@@ -72,17 +74,18 @@ window.athenaDownloadLocales = {
     "footer": "让智慧，融入你想过的生活。",
     "openSource": "开源",
     "webLabel": "网页版",
-    "sourceNotice": "想在本机使用自己的密钥？查看我们的开源发布计划。"
+    "sourceNotice": "想在本机使用自己的密钥？查看我们的开源发布计划。",
+    "firstLaunch": "首次打开：查看 Apple 官方说明"
   },
   "zh-Hant": {
     "title": "Athena macOS 測試版 — Feather",
     "skip": "跳至正文",
     "language": "語言",
-    "headline": "給日常，留一點餘白。\n從你的 Mac 開始。",
-    "intro": "用自然的語言，處理手邊的檔案。在自己的空間裡，把事情慢慢做好。",
+    "headline": "工作，\n在桌面上繼續。",
+    "intro": "你的 Mac 個人助手。把一件事的對話與檔案留在一起，回來時接著做。",
     "download": "下載 macOS 測試版",
     "preparing": "正在準備下一個版本。",
-    "notice": "面向已啟用帳戶的早期託管預覽版。尚未通過 Apple 公證，首次開啟可能被 macOS 攔截。",
+    "notice": "需要已啟用且有額度的帳戶。此測試版僅臨時簽署，尚無 Developer ID 簽署或 Apple 公證，首次開啟可能被 macOS 攔截。",
     "drag": "拖入「應用程式」，從這裡開始。",
     "begin": "簡單地開始",
     "start": "從下載，\n到第一句對話。",
@@ -97,6 +100,7 @@ window.athenaDownloadLocales = {
     "footer": "讓智慧，融入你想過的生活。",
     "openSource": "開源",
     "webLabel": "網頁版",
-    "sourceNotice": "想在本機使用自己的金鑰？查看我們的開源發佈計畫。"
+    "sourceNotice": "想在本機使用自己的金鑰？查看我們的開源發佈計畫。",
+    "firstLaunch": "首次開啟：查看 Apple 官方說明"
   }
 };
