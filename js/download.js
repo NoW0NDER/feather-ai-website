@@ -17,7 +17,8 @@
   function safe(value) { try { const u = new URL(value); return u.origin === 'https://app.athena.featherhk.com' && u.pathname.startsWith('/downloads/') && !u.username && !u.password && !u.search && !u.hash ? u.href : null; } catch { return null; } }
   function showBuild() {
     if (!build) return;
-    document.getElementById('build-detail').textContent = `${build.version} · Apple Silicon · ${(build.bytes / 1048576).toFixed(1)} MB`;
+    const revision = /^[0-9]{1,9}$/.test(String(build.build || '')) ? ` (${build.build})` : '';
+    document.getElementById('build-detail').textContent = `${build.version}${revision} · Apple Silicon · ${(build.bytes / 1048576).toFixed(1)} MB`;
   }
   try { saved = localStorage.getItem('feather-language'); } catch {}
   apply(saved && catalogs[saved] ? saved : (navigator.languages || [navigator.language]).map(match).find(Boolean) || 'en');
