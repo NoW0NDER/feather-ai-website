@@ -14,7 +14,7 @@ window.athenaDownloadLocales = {
     "stepOne": "Move it into place.",
     "stepOneBody": "Open the DMG and drag Athena into Applications.",
     "stepTwo": "Sign in, then speak naturally.",
-    "stepTwoBody": "Use your enabled Athena account with available credit. This download is the hosted preview; the local bring-your-own-key release is still being prepared.",
+    "stepTwoBody": "Use your enabled Athena account with available credit. This DMG is the hosted preview. To use your own Chat Completions connection without a Feather account, follow the open-source README instead.",
     "stepThree": "Keep your own space.",
     "stepThreeBody": "App conversations and files stay on your Mac. The web version runs on our Linux server; histories do not yet sync between them. To uninstall, quit Athena and move the app to the Trash. Your files remain.",
     "checksum": "Verify download · SHA-256",
@@ -22,7 +22,7 @@ window.athenaDownloadLocales = {
     "footer": "Intelligence for the life you want to live.",
     "openSource": "Open source",
     "webLabel": "Web version",
-    "sourceNotice": "Looking for local setup with your own key? Read our open-source release plans.",
+    "sourceNotice": "Use your own model without a Feather account: local setup from source.",
     "firstLaunch": "First launch: Apple’s guide"
   },
   "ja": {
@@ -40,7 +40,7 @@ window.athenaDownloadLocales = {
     "stepOne": "いつもの場所へ。",
     "stepOneBody": "DMG を開き、Athena を Applications にドラッグします。",
     "stepTwo": "ログインして、自然に話す。",
-    "stepTwoBody": "有効な Athena アカウントと利用残高が必要です。このダウンロードはホスト型プレビューです。自分のキーを使うローカル版は準備中です。",
+    "stepTwoBody": "有効な Athena アカウントと利用残高が必要です。この DMG はホスト型プレビューです。Feather アカウントを使わず、自分の Chat Completions 接続で利用する場合は、オープンソース版の README に沿って設定してください。",
     "stepThree": "あなたの場所を保つ。",
     "stepThreeBody": "App の会話とファイルは Mac に保存されます。Web 版は Linux サーバー上で動き、履歴はまだ同期されません。削除する場合は Athena を終了し、App をゴミ箱に移動してください。ファイルは残ります。",
     "checksum": "ダウンロードを確認 · SHA-256",
@@ -48,7 +48,7 @@ window.athenaDownloadLocales = {
     "footer": "あなたらしい暮らしに、知性を。",
     "openSource": "オープンソース",
     "webLabel": "ウェブ版",
-    "sourceNotice": "自分のキーでローカルに使いたい方へ。オープンソース公開計画をご覧ください。",
+    "sourceNotice": "Feather アカウントなしで自分のモデルを使う：ソースからローカルに設定。",
     "firstLaunch": "初回起動について：Apple のガイド"
   },
   "zh-Hans": {
@@ -66,7 +66,7 @@ window.athenaDownloadLocales = {
     "stepOne": "放到熟悉的位置。",
     "stepOneBody": "打开 DMG，把 Athena 拖进「应用程序」。",
     "stepTwo": "登录，然后自然地说。",
-    "stepTwoBody": "使用已开通且有可用额度的 Athena 账户。此下载为托管预览版；自备密钥的本机版本仍在准备中。",
+    "stepTwoBody": "使用已开通且有可用额度的 Athena 账户。此 DMG 为托管预览版。若希望无需 Feather 账户、使用自己的 Chat Completions 连接，请按开源 README 从源码配置。",
     "stepThree": "保留自己的空间。",
     "stepThreeBody": "App 的聊天和文件保存在你的 Mac。网页版在 Linux 服务器运行，两端记录暂不互通。卸载时退出 Athena，将 App 移到废纸篓；个人文件会保留。",
     "checksum": "校验下载文件 · SHA-256",
@@ -74,7 +74,7 @@ window.athenaDownloadLocales = {
     "footer": "让智慧，融入你想过的生活。",
     "openSource": "开源",
     "webLabel": "网页版",
-    "sourceNotice": "想在本机使用自己的密钥？查看我们的开源发布计划。",
+    "sourceNotice": "无需 Feather 账户，使用自己的模型：从源码配置本机版。",
     "firstLaunch": "首次打开：查看 Apple 官方说明"
   },
   "zh-Hant": {
@@ -92,7 +92,7 @@ window.athenaDownloadLocales = {
     "stepOne": "放到熟悉的位置。",
     "stepOneBody": "開啟 DMG，把 Athena 拖進「應用程式」。",
     "stepTwo": "登入，然後自然地說。",
-    "stepTwoBody": "使用已啟用且有可用額度的 Athena 帳戶。此下載為託管預覽版；自備金鑰的本機版本仍在準備中。",
+    "stepTwoBody": "使用已啟用且有可用額度的 Athena 帳戶。此 DMG 為託管預覽版。若希望無需 Feather 帳戶、使用自己的 Chat Completions 連線，請依開源 README 從原始碼設定。",
     "stepThree": "保留自己的空間。",
     "stepThreeBody": "App 的聊天和檔案儲存在你的 Mac。網頁版在 Linux 伺服器執行，兩端記錄暫不互通。解除安裝時退出 Athena，將 App 移到垃圾桶；個人檔案會保留。",
     "checksum": "校驗下載檔案 · SHA-256",
@@ -100,7 +100,7 @@ window.athenaDownloadLocales = {
     "footer": "讓智慧，融入你想過的生活。",
     "openSource": "開源",
     "webLabel": "網頁版",
-    "sourceNotice": "想在本機使用自己的金鑰？查看我們的開源發佈計畫。",
+    "sourceNotice": "無需 Feather 帳戶，使用自己的模型：從原始碼設定本機版。",
     "firstLaunch": "首次開啟：查看 Apple 官方說明"
   }
 };
