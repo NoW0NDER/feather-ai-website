@@ -79,7 +79,12 @@ window.featherPageLocales = {
     "oContributeNote": "Contribution instructions and the issue tracker will be linked here with the public repository. There is no separate community or plugin marketplace to join at this stage.",
     "oNext": "While we prepare the source release",
     "oNextBody": "The Mac preview is available through our download page. Its build details and signing status are the source of truth for what you can install today.",
-    "nav": "Main navigation"
+    "nav": "Main navigation",
+    "demoHeading": "A change of plan, in the same table.",
+    "demoBody": "Two fictional quotes. One follow-up changes the lighting cost. Athena updates the original Excel file and opens its independent desktop panel, keeping the saved position and size.",
+    "demoRequest": "01 / Continue the task",
+    "demoResult": "02 / The original result, updated",
+    "demoProof": "Actual macOS preview Build 26 screenshots, captured as separate steps. All quote data is synthetic. These are application-window captures, not a continuous video. Click an image to inspect the full capture."
   },
   "zh-Hans": {
     "product": "Athena",
@@ -161,7 +166,12 @@ window.featherPageLocales = {
     "oContributeNote": "公开仓库上线时，这里会一并提供贡献指南和问题跟踪入口。现阶段没有需要加入的独立社区或插件市场。",
     "oNext": "等待源码发布期间",
     "oNextBody": "你可以从下载页获取 Mac 预览版。今天可安装版本的构建信息和签名状态，以该页面为准。",
-    "nav": "主导航"
+    "nav": "主导航",
+    "demoHeading": "同一份结果，接着修改。",
+    "demoBody": "比较两份虚构报价，再补一句“照明改为 3200 元”。Athena 更新原来的 Excel，在独立桌面面板中显示，保留之前的位置和大小。",
+    "demoRequest": "01 / 接着交代",
+    "demoResult": "02 / 原结果更新",
+    "demoProof": "来自 macOS 预览版 Build 26 的真实操作截图，分别在各步骤拍摄。所有报价均为虚构数据；这是应用窗口截图，并非连续录像。点击图片可查看完整截图。"
   },
   "zh-Hant": {
     "product": "Athena",
@@ -243,7 +253,12 @@ window.featherPageLocales = {
     "oContributeNote": "公開儲存庫上線時，這裡會一併提供貢獻指南和問題追蹤入口。現階段沒有需要加入的獨立社群或外掛市集。",
     "oNext": "等待原始碼發佈期間",
     "oNextBody": "你可以從下載頁取得 Mac 預覽版。今天可安裝版本的建置資訊和簽名狀態，以該頁面為準。",
-    "nav": "主要導覽"
+    "nav": "主要導覽",
+    "demoHeading": "同一份結果，接著修改。",
+    "demoBody": "比較兩份虛構報價，再補一句「照明改為 3200 元」。Athena 更新原來的 Excel，在獨立桌面面板中顯示，保留之前的位置和大小。",
+    "demoRequest": "01 / 接著交代",
+    "demoResult": "02 / 原結果更新",
+    "demoProof": "來自 macOS 預覽版 Build 26 的實際操作截圖，分別在各步驟擷取。所有報價均為虛構資料；這是應用程式視窗截圖，並非連續錄影。點擊圖片可查看完整截圖。"
   },
   "ja": {
     "product": "Athena",
@@ -325,6 +340,11 @@ window.featherPageLocales = {
     "oContributeNote": "貢献手順と課題管理へのリンクは、リポジトリ公開時に掲載します。現段階では、参加が必要な別のコミュニティやプラグイン市場はありません。",
     "oNext": "ソース公開を待つ間に",
     "oNextBody": "Mac プレビューはダウンロードページから入手できます。現在インストールできるビルドと署名の状態は、そちらをご確認ください。",
-    "nav": "ナビゲーション"
+    "nav": "ナビゲーション",
+    "demoHeading": "同じ表で、作業を続ける。",
+    "demoBody": "架空の見積もりを2つ比較し、照明の金額を変更するよう追加で依頼。Athena は元の Excel ファイルを更新し、保存した位置と大きさを保った独立したデスクトップパネルに表示します。",
+    "demoRequest": "01 / 続けて依頼",
+    "demoResult": "02 / 元の表を更新",
+    "demoProof": "macOS プレビュー Build 26 の実際の操作画面を、手順ごとに撮影しました。見積もりデータはすべて架空です。アプリのウィンドウのスクリーンショットであり、連続した動画ではありません。画像をクリックすると全体を確認できます。"
   }
 };
